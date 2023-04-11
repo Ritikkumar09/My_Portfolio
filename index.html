@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05b9e83cb7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ <!-- ----------------------------------------------------------------- Home ----------------------------------------------------------- -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <P>Software Engineer</P>
+                <h1>Hi, I'm <span>Rishabh</span><br> From India</h1>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ----------------------------------------------------------------- About ----------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>software developer with expertise in multiple programming languages and a passion for building
+                        efficient and scalable applications</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Frontend Development</span><br>Designing web interfaces</li>
+                            <li><span>Python</span><br>App Development</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>"FULL STACK WEB DEVELOPMENT WITH PYTHON"</span><br>An online course authorized by
+                                iNeuron</li>
+                            <li><span>"CRASH COURSE ON PYTHON"</span><br>An online non-credit course authorized by
+                                Google and offered through Coursera</li>
+                            <li><span>"Programming With JavaScript"</span><br>An online non-credit course authorized by
+                                Meta and offered through Coursera</li>
+                            <li><span>"React Basics"</span><br>An online non-credit course authorized by Meta and
+                                offered through Coursera</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>MCA from Patliputra University, Patna</li>
+                            <li><span>2020</span><br>BCA from Magadh University, Gaya</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------------------------- Services ----------------------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers
+                        to the user experience aspects of website development rather than software development. </p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Front-end Design</h2>
+                    <p> Front-End Design is an emerging term for the coalescence between the ever-glamorous world of
+                        design. In simpler terms, it’s the actual implementation of designs made i.e, treating frontend
+                        development as a core part of the design process.</p>
+                    <a href="https://en.wikipedia.org/wiki/Front-end_web_development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Application design is the task of designing mobile applications to ensure optimal usability,
+                        accessibility, engagement and overall user experience.0 It encompasses both the user interface
+                        (UI) and user experience (UX), with app designers in charge of making an app look good while
+                        developers make it work correctly</p>
+                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------------------------- Portfolio ----------------------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects you to the talented people around the world.
+                        </p>
+                        <a href="https://famous-raindrop-5cff61.netlify.app"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Spotify</h3>
+                        <p>Designed for Music Lovers, Listen to your favorite songs, artists and playlists.</p>
+                        <a href="https://magical-choux-303719.netlify.app"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Payments</h3>
+                        <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks
+                            & mutual funds, and do a lot more.</p>
+                        <a href="https://melodic-nasturtium-1e63e7.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/beingRish?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------------------------- Contact ----------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> inforishi1107@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7646086573</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rishabhsingh.rishabhsingh.5623/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/being_rish_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/being_rish_"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rishabh-kumar-851989203/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/beingRish"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Rishabh's Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- /* ----------------------------------------------------------------- JavaScript ----------------------------------------------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemunu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemunu.style.right = "0";
+        }
+        function closemenu() {
+            sidemunu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYHReZ7LIWMU8yNBJNs1ynx6Fx4TF9d9NAPjLdAplbeJu9CRfcCVp4NW9EfbKB5sLeAw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
